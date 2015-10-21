@@ -1,0 +1,26 @@
+﻿Build started 10/21/2015 5:01:43 PM.
+     1>Project "C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\kilobot_simulation.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\glew-1.11.0\include" /I"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\freeglut\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp robot.cpp
+         robot.cpp
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\robot.cpp(57): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+         main.cpp
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(220): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(227): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(231): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(232): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(236): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(237): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(292): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(295): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\m\documents\visual studio 2015\projects\kilobot_simulation\kilobot_simulation\main.cpp(342): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\Debug\kilobot_simulation.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\glew-1.11.0\lib" /LIBPATH:"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\freeglut\lib" freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\Debug\kilobot_simulation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\Debug\kilobot_simulation.lib" /MACHINE:X86 Debug\main.obj
+         Debug\robot.obj
+         kilobot_simulation.vcxproj -> C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\Debug\kilobot_simulation.exe
+     1>Done Building Project "C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\kilobot_simulation.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.13
