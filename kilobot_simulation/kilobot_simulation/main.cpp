@@ -93,6 +93,7 @@ void drawScene(void)
 		{
 			//robots[i].controller_timestep_gradient();
 			robots[i].controller_orbit();
+			//robots[i].controller_move_straight();
 		}
 
 	}
@@ -165,8 +166,9 @@ void drawScene(void)
 			if (find_collisions(order[i], robots[order[i]].pos[0] + forward_motion_step*cos(robots[order[i]].pos[2]), robots[order[i]].pos[1] + forward_motion_step*sin(robots[order[i]].pos[2])) == 0)
 			{
 
-				robots[order[i]].pos[0] += forward_motion_step*cos(robots[order[i]].pos[2]);
-				robots[order[i]].pos[1] += forward_motion_step*sin(robots[order[i]].pos[2]);
+				robots[order[i]].pos[0] += forward_motion_step*cos(robots[order[i]].pos[2]) ;
+				robots[order[i]].pos[1] += forward_motion_step*sin(robots[order[i]].pos[2]) ;
+				robots[order[i]].pos[2] += robots[order[i]].motor_error;
 			}
 
 		}

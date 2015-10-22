@@ -1,6 +1,12 @@
 #include <iostream>
 #include "robot.h"
 
+void robot::controller_move_straight()
+{
+
+	motor_command = 1;
+	color[0] = 1;
+}
 //example controller that has one robot orbit the other
 void robot::controller_orbit()
 {
@@ -168,11 +174,38 @@ void robot::init(int x, int y, int t)
 	id = rand();
 	hop = 255;
 	rand();
-
+	motor_error = gaussrand()*motion_error_std;
+	
 	//set the robot at this position to be the seed of the gradient/hop count
 	if ((x == 200) && (y == 200))
 		hop = 0;
 
 
 
+}
+
+double robot::gaussrand()
+{
+	static double V1, V2, S;
+	static int phase = 0;
+	double X;
+
+	if (phase == 0) {
+		do {
+			double U1 = (double)rand() / RAND_MAX;
+			double U2 = (double)rand() / RAND_MAX;
+
+			V1 = 2 * U1 - 1;
+			V2 = 2 * U2 - 1;
+			S = V1 * V1 + V2 * V2;
+		} while (S >= 1 || S == 0);
+
+		X = V1 * sqrt(-2 * log(S) / S);
+	}
+	else
+		X = V2 * sqrt(-2 * log(S) / S);
+
+	phase = 1 - phase;
+
+	return X;
 }
