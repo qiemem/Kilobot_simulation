@@ -76,20 +76,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ExecutablePath>C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\glew-1.11.0\include;C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\freeglut\include;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\glew-1.11.0\include;C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\freeglut\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>.\glew-1.11.0\include;.\freeglut\include;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.\glew-1.11.0\include;.\freeglut\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\glew-1.11.0\include;C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\glew-1.11.0\include;.\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\glew-1.11.0\lib;C:\Users\m\Documents\Visual Studio 2015\Projects\kilobot_simulation\kilobot_simulation\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\glew-1.11.0\lib;.\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
