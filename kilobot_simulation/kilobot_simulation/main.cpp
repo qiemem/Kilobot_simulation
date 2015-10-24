@@ -1,13 +1,12 @@
-
-#include <Windows.h>
-#include <GL\glew.h>
-#include <GL\freeglut.h>
+#include <GL/glew.h>
+#include <GL/freeglut.h>
 #include <iostream>
 #include <time.h>
+#include <math.h>
 #include "robot.h"
 using namespace std;
 
-#define delay 20 //delay between time steps, use if program is too fast
+#define delay 0 //delay between time steps, use if program is too fast
 #define  windowWidth 500 //display window
 #define  windowHeight 500 //display window
 #define comm_range 100 //communication range between robots
@@ -278,16 +277,16 @@ void keyInput(unsigned char key, int x, int y)
 	case 27:
 		exit(0);
 		break;
-	case 'w'://up 
+	case 'w'://up
 		view_y += 100;
 		break;
-	case 'a'://up 
+	case 'a'://up
 		view_x -= 100;
 		break;
-	case 's'://up 
+	case 's'://up
 		view_y -= 100;
 		break;
-	case 'd'://up 
+	case 'd'://up
 		view_x += 100;
 		break;
 	case '-':
@@ -307,7 +306,7 @@ void OnIdle(void) {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(-zoom + view_x, view_x, -zoom + view_y, view_y, 0.0f, 1.0f);
-	Sleep(delay);
+	//sleep(delay);
 	glutPostRedisplay();
 }
 

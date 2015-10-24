@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 #include "robot.h"
 
 void robot::controller_move_straight()
@@ -175,7 +176,7 @@ void robot::init(int x, int y, int t)
 	hop = 255;
 	rand();
 	motor_error = gaussrand()*motion_error_std;
-	
+
 	//set the robot at this position to be the seed of the gradient/hop count
 	if ((x == 200) && (y == 200))
 		hop = 0;
