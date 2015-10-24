@@ -14,22 +14,22 @@ Kilobot Simulator
 1. Install [XQuartz](http://xquartz.macosforge.org/) (though there's a good chance you already have it).
 
 2. Install glew and freeglut. If you use [Homebrew](http://brew.sh/) (which you really should), this is just:
-
-```
-brew install glew
-brew install homebrew/x11/freeglut
-```
-
-I would guess that MacPorts and Fink also have these libraries.
+  
+  ```
+  brew install glew
+  brew install homebrew/x11/freeglut
+  ```
+  
+  I would guess that MacPorts and Fink also have these libraries.
 
 3. Compile and run!
+  
+  ```
+  make
+  ./kilobot
+  ```
 
-```
-make
-./kilobot
-```
-
-Not that if your libraries are installed to somewhere besides `/usr/local`, you'll have to edit the Makefile to point the right directory. Just change `/usr/local/lib` and `/usr/local/include` to point to wherever you put such things.
+Note that if your libraries are installed to somewhere besides `/usr/local`, you'll have to edit the Makefile to point to the right directories. Just change `/usr/local/lib` and `/usr/local/include` to point to wherever you put such things.
 
 #### Linux
 
